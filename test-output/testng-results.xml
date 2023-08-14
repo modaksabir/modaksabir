@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-14T08:31:18 SAST" name="Default suite" finished-at="2023-08-14T08:33:38 SAST" duration-ms="139555">
+    <groups>
+    </groups>
+    <test started-at="2023-08-14T08:31:18 SAST" name="Default test" finished-at="2023-08-14T08:33:38 SAST" duration-ms="139555">
+      <class name="com.testCases.TestCase">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:com.testCases.TestCase@312aa7c]" started-at="2023-08-14T08:31:16 SAST" name="invokeBrowser" finished-at="2023-08-14T08:31:18 SAST" duration-ms="2181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.testCases.TestCase@312aa7c]" started-at="2023-08-14T08:31:18 SAST" name="preCondition" finished-at="2023-08-14T08:31:55 SAST" duration-ms="36295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="intelligentCapture(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testCases.TestCase@312aa7c]" started-at="2023-08-14T08:31:56 SAST" name="intelligentCapture" data-provider="TestData" finished-at="2023-08-14T08:32:45 SAST" duration-ms="49036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[14850884_23-07-2022_2653563.tif]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gloria Hambeleleni Twiihaleni]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kapingana]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[National Identification Document (ID)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[80122410785]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1980/12/24]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Female]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Namibia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intelligentCapture -->
+        <test-method signature="intelligentCapture(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testCases.TestCase@312aa7c]" started-at="2023-08-14T08:32:45 SAST" name="intelligentCapture" data-provider="TestData" finished-at="2023-08-14T08:33:37 SAST" duration-ms="52569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nxe4ouysk5wphol3fo2uc4cc-01.pdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gideon Paaris Tangi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nuule]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[National Identification Document (ID)]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[95072400158]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1995/07/24]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Male]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Namibia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intelligentCapture -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testCases.TestCase@312aa7c]" started-at="2023-08-14T08:33:37 SAST" name="teardown" finished-at="2023-08-14T08:33:38 SAST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.testCases.TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
