@@ -1,6 +1,9 @@
 package com.pageObject;
 
 import java.time.Duration;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,10 +28,9 @@ public WebDriver ldriver;
 	public void clkContinueToApplication() throws InterruptedException {
 		
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until(ExpectedConditions.textMatches(By.cssSelector(".todo-counter"), Pattern.compile("Result")));
-		//wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='gui-content']")));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".loader-unloaded")));
 		wait.until((ExpectedConditions.elementToBeClickable(btnContinueToApplication)));
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnContinueToApplication);
 	}
 

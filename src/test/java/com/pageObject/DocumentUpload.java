@@ -30,7 +30,6 @@ public WebDriver ldriver;
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.visibilityOf(btnChooseFile)));
 		btnChooseFile.sendKeys(String.format("C:\\Users\\con_modaks\\eclipse-workspace\\Intelligent Capture Automation\\TestSamples\\%s", file_name));
-				//"C:\\Users\\con_modaks\\eclipse-workspace\\Intelligent Capture Automation\\TestSamples\\14850884_23-07-2022_2653563.tif");		
 	}
 	
 	public void clkBtnUpload() {

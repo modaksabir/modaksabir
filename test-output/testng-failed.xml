@@ -5,7 +5,7 @@
     <classes>
       <class name="com.testCases.TestCase">
         <methods>
-          <include name="intelligentCapture" invocation-numbers="1"/>
+          <include name="intelligentCapture" invocation-numbers="0"/>
           <include name="invokeBrowser"/>
           <include name="teardown"/>
           <include name="preCondition"/>

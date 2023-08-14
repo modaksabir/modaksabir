@@ -52,7 +52,6 @@ public WebDriver ldriver;
 	public void enterDateOfBirth(String DOB) {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.visibilityOf(inputDOB)));
-		//inputFirstName.click();
 		inputDOB.clear();
 		inputDOB.sendKeys(DOB);
 	}
@@ -60,39 +59,25 @@ public WebDriver ldriver;
 	public void enterNetAnnualIncome(String income) {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.visibilityOf(inputNetAnnualIncome)));
-		//inputFirstName.click();
 		inputNetAnnualIncome.clear();
 		inputNetAnnualIncome.sendKeys(income);
 	}
 	
 	public void clkRdBtnYesUBO() {
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until((ExpectedConditions.visibilityOf(inputNetAnnualIncome)));
-		//inputFirstName.click();
 		rdBtnYesUBO.click();
 	}
 	
 	public void clkRdBtnNotStaff() {
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until((ExpectedConditions.visibilityOf(inputNetAnnualIncome)));
-		//inputFirstName.click();
 		rdBtnNotStaff.click();
 	}
 	
 	public void clkOnEmptySpace() {
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", clkEmptySpace);
-		//clkEmptySpace.click();
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.textToBePresentInElementLocated(By.id("select-rim-classification-text"), "High Nett Worth")));
-		//String x=ldriver.findElement(By.id("select-rim-classification-text")).getText();
-		//System.out.println(x);
 	}
 	
 	public void clkBtnNext() {
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until((ExpectedConditions.visibilityOf(inputNetAnnualIncome)));
-		//inputFirstName.click();
-		//System.out.println("Before clicking next");
 		clkNext.click();
 	}
 	
@@ -101,7 +86,4 @@ public WebDriver ldriver;
 		wait.until((ExpectedConditions.elementToBeClickable(btnReqmntMetNext)));
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnReqmntMetNext);
 	}
-	
-	
-
 }

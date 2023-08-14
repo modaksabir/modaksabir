@@ -33,13 +33,9 @@ public WebDriver ldriver;
 	
 	@FindBy(css="button[class='btn btn-primary']")
 	@CacheLookup
-	WebElement btnConfirm;
-
+	WebElement btnConfirm;	
 	
-	
-	
-	public void clkRdBtnTransact() {
-		
+	public void clkRdBtnTransact() {		
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.elementToBeClickable(rdBtnTransact)));
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", rdBtnTransact);
@@ -51,8 +47,7 @@ public WebDriver ldriver;
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnNext);
 	}
 	
-	public void clkRdBtnTransactionAccount() {
-		
+	public void clkRdBtnTransactionAccount() {		
 		int attempts = 0;
 	    while(attempts < 2) {
 	        try {
@@ -60,10 +55,6 @@ public WebDriver ldriver;
 	    		
 	    		wait.until((ExpectedConditions.elementToBeClickable(rdBtnTransactionAccount)));
 	    		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", rdBtnTransactionAccount);
-	    		//rdBtnTransactionAccount.click();
-	        	
-	            //driver.findElement(by).click();
-	            //result = true;
 	            break;
 	        } catch(org.openqa.selenium.StaleElementReferenceException ex) {
 	        	WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
@@ -81,8 +72,4 @@ public WebDriver ldriver;
 		wait.until((ExpectedConditions.elementToBeClickable(btnConfirm)));
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnConfirm);
 	}
-	
-	
-	
-
 }

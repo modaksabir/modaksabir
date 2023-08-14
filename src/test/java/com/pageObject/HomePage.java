@@ -49,10 +49,5 @@ public WebDriver ldriver;
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.visibilityOf(customerMaintenancePersonal)));
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", customerMaintenancePersonal);
-		//customerMaintenancePersonal.click();
-		//System.out.println("After personal");
 	}
-	
-	
-
 }

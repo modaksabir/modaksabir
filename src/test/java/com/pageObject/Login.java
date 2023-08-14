@@ -41,7 +41,4 @@ public class Login {
 	public void clkLoginBtn() {
 		loginBtn.click();
 	}
-	
-	
-
 }

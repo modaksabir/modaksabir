@@ -35,23 +35,17 @@ public WebDriver ldriver;
 	public void enterFirstName(String FName) {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
 		wait.until((ExpectedConditions.visibilityOf(inputFirstName)));
-		//inputFirstName.click();
 		inputFirstName.clear();
 		inputFirstName.sendKeys(FName);
 	}
 	
 	public void enterLastName(String LName) {
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until((ExpectedConditions.visibilityOf(inputLastName)));
 		inputLastName.click();
 		inputLastName.clear();
 		inputLastName.sendKeys(LName);
 	}
 	
 	public void clkSearchCustomer() {
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(60));
-		//wait.until((ExpectedConditions.visibilityOf(inputLastName)));
 		btnSearchCustomer.click();
 	}
-
 }

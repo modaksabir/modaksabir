@@ -72,31 +72,26 @@ public WebDriver ldriver;
 	
 	public String getTextinputLastName() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(inputLastName)));
 		return inputLastName.getAttribute("control-value");		
 	}
 	
 	public String getTextDrpDwnIdentityType() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(drpDwnIdentityType)));
 		return drpDwnIdentityType.getText();		
 	}
 	
 	public String getTextInputIDNumber() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(inputIDNumber)));
 		return inputIDNumber.getAttribute("control-value");		
 	}
 	
 	public String getTextInputDOB() throws ParseException {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(inputDOB)));
 		String formatDate=inputDOB.getAttribute("control-value");
-		
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
 	    SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy/MM/dd");
 	    Date date = inputFormat.parse(formatDate);
@@ -106,32 +101,26 @@ public WebDriver ldriver;
 	
 	public String getTextDrpDwnGender() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(drpDwnGender)));
 		return drpDwnGender.getText();		
 	}
 	
 	public String getTextDrpDwnCitizen() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(drpDwnCitizen)));
 		return drpDwnCitizen.getText();		
 	}
 	
 	public void clkBtnConfirm() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(btnConfirm)));
 		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnConfirm);
-		//btnConfirm.click();		
 	}
 	
 	public void clkBtnClose() {
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(120));
-		//wait.until(ExpectedConditions.not(ExpectedConditions.textMatches(By.cssSelector(".loader-text-small"),Pattern.compile("Reading Document"))));
 		wait.until((ExpectedConditions.visibilityOf(btnClose)));
-		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnClose);
-		//btnClose.click();		
+		((JavascriptExecutor)ldriver).executeScript("arguments[0].click();", btnClose);		
 	}
 
 }
